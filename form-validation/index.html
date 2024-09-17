@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+let validate=()=>{
+var user=document.myname.user.value;
+var password=document.myname.password.value;
+var Cpassword=document.myname.Cpassword.value;
+var email=document.myname.email.value;
+
+
+if(user==null || user==""){
+
+alert("User cannot be empty")
+}else if(password.length<6){
+
+    alert("Password cannot be less than 6.")
+}else if(password!=Cpassword){
+    alert("Write same Password");
+}else if(email=null||email==""){
+    alert("Email cannot be empty");
+}
+
+
+}
+
+</script>
+
+
+
+
+
+
+<style>
+    .container{
+        display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+border: solid 2px green;
+/* gap:20px; */
+width: 50%;
+align-items: center;
+   
+align-content: center
+}
+.parent{
+    border: solid 4px black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+</style>
+<body>
+  
+<form action="" name="myname"onsubmit="validate()">
+
+    <div class="parent">
+      
+<div class="container">
+    <span>Name :</span> 
+<input type="text" name="user" id="">
+<span>Password :</span>
+<input type="password" name="password" id="">
+
+<span>Cpassword :</span>
+<input type="password" name="Cpassword" id="">
+<span>Gmail :</span>
+<input type="email" name="email" id="">
+<input type="submit" value="Register">
+</div> 
+</div>
+
+</form>
+
+
+
+
+
+</body>
+</html>

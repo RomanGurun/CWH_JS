@@ -1,0 +1,20 @@
+html,body{
+    height:100%;
+    width:100%;
+}
+.bulb{
+    background-color: yellow;
+display: none;
+
+}
+.bulbcontainer{
+height: 341px;
+width:34px;
+}
+
+#bulb{
+    
+    margin:20px 490px;
+    width:300px;
+text-align: center;
+}
